@@ -3,57 +3,64 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 
-<h:head>
-    <title>Producto | Ezertech</title>
-    <h:outputStylesheet library="css" name="styles.css"/>
-</h:head>
+    <h:head>
+        <title>Producto | Ezertech</title>
+        <h:outputStylesheet library="css" name="styles.css"/>
+    </h:head>
 
-<h:body>
-    <!-- Header común -->
-    <ui:include src="/includes/header.xhtml"/>
+    <h:body>
+        <!-- Header común -->
+        <ui:include src="/includes/header.xhtml"/>
 
-    <!-- Sección principal -->
-    <div class="section">
-        <h1 class="section-title">Nuestros Productos</h1>
-        <h2 class="section-subtitle">Soluciones Ezertech para el sector salud</h2>
-        <p>
-            Nuestras plataformas están diseñadas para optimizar los procesos críticos del ecosistema de salud,
-            garantizando trazabilidad, cumplimiento normativo y eficiencia operativa en cada paso.
-        </p>
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Soluciones digitales para el sector salud</h1>
+            <p>Optimización de procesos críticos con trazabilidad, cumplimiento normativo y eficiencia operativa.</p>
+            <button>Conoce más</button>
+        </div>
 
-        <!-- Beneficios del producto -->
-        <div class="differentiator">
-            <h2 class="section-subtitle">Beneficios principales</h2>
-            <div class="differentiator-grid">
-                <div class="differentiator-card">
-                    <h3>Gestión Integral de Procesos</h3>
-                    <p>Automatización de procesos administrativos, clínicos y financieros con trazabilidad completa.</p>
-                </div>
-                <div class="differentiator-card">
-                    <h3>Plataforma Modular</h3>
-                    <p>Flexibilidad para integrar módulos según las necesidades de cada aseguradora o institución.</p>
-                </div>
-                <div class="differentiator-card">
-                    <h3>Interoperabilidad</h3>
-                    <p>Compatibilidad con sistemas existentes y facilidad de integración con terceros.</p>
-                </div>
-                <div class="differentiator-card">
-                    <h3>Seguridad y Cumplimiento</h3>
-                    <p>Protección de datos sensibles y cumplimiento con normas regulatorias locales e internacionales.</p>
-                </div>
-                <div class="differentiator-card">
-                    <h3>Analytics y Reporting</h3>
-                    <p>Reportes en tiempo real y analítica avanzada para la toma de decisiones estratégicas.</p>
-                </div>
-                <div class="differentiator-card">
-                    <h3>Soporte y Actualizaciones</h3>
-                    <p>Equipo especializado para soporte continuo y actualizaciones de la plataforma.</p>
+        <!-- Sección Principal de Productos -->
+        <div class="section">
+            <h1 class="section-title">Nuestros Productos</h1>
+            <h2 class="section-subtitle">Soluciones Ezertech para el sector salud</h2>
+            <p>
+                Nuestras plataformas están diseñadas para optimizar los procesos críticos del ecosistema de salud,
+                garantizando trazabilidad, cumplimiento normativo y eficiencia operativa en cada paso.
+            </p>
+
+            <!-- Beneficios principales -->
+            <div class="differentials">
+                <h2>Nuestros Diferenciales</h2>
+                <div class="differentials-grid">
+                    <div class="differential-card">
+                        <h3>Gestión Integral de Procesos</h3>
+                        <p>Automatización de procesos administrativos, clínicos y financieros con trazabilidad completa.</p>
+                    </div>
+                    <div class="differential-card">
+                        <h3>Plataforma Modular</h3>
+                        <p>Flexibilidad para integrar módulos según las necesidades de cada aseguradora o institución.</p>
+                    </div>
+                    <div class="differential-card">
+                        <h3>Interoperabilidad</h3>
+                        <p>Compatibilidad con sistemas existentes y facilidad de integración con terceros.</p>
+                    </div>
+                    <div class="differential-card">
+                        <h3>Seguridad y Cumplimiento</h3>
+                        <p>Protección de datos sensibles y cumplimiento con normas regulatorias locales e internacionales.</p>
+                    </div>
+                    <div class="differential-card">
+                        <h3>Analytics y Reporting</h3>
+                        <p>Reportes en tiempo real y analítica avanzada para la toma de decisiones estratégicas.</p>
+                    </div>
+                    <div class="differential-card">
+                        <h3>Soporte y Actualizaciones</h3>
+                        <p>Equipo especializado para soporte continuo y actualizaciones de la plataforma.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer común -->
-    <ui:include src="/includes/footer.xhtml"/>
-</h:body>
+        <!-- Footer común -->
+        <ui:include src="/includes/footer.xhtml"/>
+    </h:body>
 </html>
