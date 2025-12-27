@@ -1,5 +1,47 @@
-<div class="menu">
-    <a href="index.xhtml">Inicio</a>
-    <a href="quienes.xhtml">Quiénes Somos</a>
-    <a href="producto.xhtml">Producto</a>
-</div>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:ui="jakarta.faces.facelets">
+
+<h:body>
+    <div class="navbar">
+        <div class="logo">
+            <strong style="color:#131445;">Ezertech</strong>
+        </div>
+        <div class="menu">
+            <a href="index.xhtml">Inicio</a>
+            <a href="quienes.xhtml">Quiénes Somos</a>
+            <a href="producto.xhtml">Producto</a>
+            <a href="contacto.xhtml">Contacto</a>
+        </div>
+    </div>
+</h:body>
+
+<style>
+    .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .navbar .menu a {
+        color: #223CA8;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .navbar .menu a:hover {
+        color: #131445;
+    }
+</style>
+</html>

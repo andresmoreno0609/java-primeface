@@ -4,7 +4,7 @@
       xmlns:ui="jakarta.faces.facelets">
 
 <h:head>
-    <title>Ezertech | Soluciones para el sector salud</title>
+    <title>Ezertech | Inicio</title>
     <style>
         body {
             margin: 0;
@@ -13,6 +13,7 @@
             color: #333;
         }
 
+        /* Header */
         .navbar {
             background-color: #ffffff;
             border-bottom: 1px solid #e0e0e0;
@@ -22,7 +23,13 @@
             align-items: center;
         }
 
-        .navbar a {
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #131445;
+        }
+
+        .navbar .menu a {
             color: #223CA8;
             margin: 0 15px;
             text-decoration: none;
@@ -30,55 +37,33 @@
             transition: color 0.3s;
         }
 
-        .navbar a:hover {
+        .navbar .menu a:hover {
             color: #131445;
         }
 
+        /* Hero */
         .hero {
             text-align: center;
             padding: 100px 40px;
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #131445, #223CA8);
+            color: white;
         }
 
         .hero h1 {
             font-size: 48px;
-            color: #131445;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 20px;
-            color: #555;
             max-width: 700px;
             margin: auto;
         }
 
-        .section {
-            padding: 60px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .section h2 {
+        .hero button {
+            margin-top: 30px;
+            background: #ffffff;
             color: #223CA8;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .cta {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .cta button {
-            background-color: #223CA8;
-            color: white;
             border: none;
             padding: 15px 30px;
             font-size: 18px;
@@ -87,38 +72,189 @@
             transition: background-color 0.3s;
         }
 
-        .cta button:hover {
-            background-color: #131445;
+        .hero button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Beneficios */
+        .section {
+            padding: 60px 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .benefits {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 280px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #223CA8;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            background: #f9f9f9;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            color: #223CA8;
+            margin-bottom: 30px;
+        }
+
+        .testimonials blockquote {
+            font-size: 18px;
+            color: #333;
+            margin: 20px auto;
+            max-width: 700px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f9f9f9;
+            border-top: 1px solid #e0e0e0;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #223CA8;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #131445;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </h:head>
 
 <h:body>
-    <!-- Navegación -->
+    <!-- Header -->
     <div class="navbar">
-        <div><strong style="color:#131445;">Ezertech</strong></div>
-        <div>
+        <div class="logo">Ezertech</div>
+        <div class="menu">
             <a href="index.xhtml">Inicio</a>
             <a href="quienes.xhtml">Quiénes Somos</a>
             <a href="producto.xhtml">Producto</a>
         </div>
     </div>
 
-    <!-- Hero principal -->
+    <!-- Hero -->
     <div class="hero">
         <h1>Soluciones digitales para el sector salud</h1>
         <p>Transformamos procesos críticos en plataformas inteligentes, seguras y adaptadas al cumplimiento normativo.</p>
+        <button>Conoce más</button>
     </div>
 
-    <!-- Sección de empresa -->
+    <!-- Beneficios -->
     <div class="section">
-        <h2>Nuestra Empresa</h2>
-        <p>
-            Somos una <strong>Fábrica de software</strong> especializada en el sector salud con experiencia en el desarrollo de soluciones ERP para empresas aseguradoras de salud, con enfoque en el cumplimiento normativo, trazabilidad y eficiencia, convirtiéndonos en expertos en plataformas críticas del ecosistema.
-        </p>
+        <h2 style="text-align:center; color:#131445;">Nuestros Diferenciales</h2>
+        <div class="benefits">
+            <div class="card">
+                <h2>Cumplimiento Normativo</h2>
+                <p>Garantizamos trazabilidad y seguridad en cada proceso del ecosistema de salud.</p>
+            </div>
+            <div class="card">
+                <h2>Arquitectura Modular</h2>
+                <p>Escalable y configurable para adaptarse a cualquier entidad aseguradora.</p>
+            </div>
+            <div class="card">
+                <h2>Interoperabilidad</h2>
+                <p>Integración sencilla con múltiples entornos tecnológicos y plataformas externas.</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="cta">
-            <button>Contáctanos</button>
+    <!-- Testimonios -->
+    <div class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <blockquote>
+            "Con Ezertech logramos digitalizar procesos críticos en menos de 6 meses."
+        </blockquote>
+        <blockquote>
+            "La plataforma nos dio confianza y cumplimiento normativo desde el primer día."
+        </blockquote>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ezertech</h3>
+                <p>Impulsamos la transformación digital del sector salud con soluciones ERP innovadoras.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@ezertech.com</p>
+                <p>Tel: +57 300 000 0000</p>
+                <p>Barranquilla, Colombia</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>
+                    <a href="#" target="_blank">LinkedIn</a> | 
+                    <a href="#" target="_blank">Twitter</a> | 
+                    <a href="#" target="_blank">Facebook</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom"> <p>© 2025 Ezertech. Todos los derechos reservados.</p> </div>
         </div>
     </div>
 </h:body>
