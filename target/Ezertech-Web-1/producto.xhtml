@@ -4,21 +4,91 @@
       xmlns:ui="jakarta.faces.facelets">
 
 <h:head>
-    <title>Productos | Ezertech</title>
+    <title>Producto | Ezertech</title>
     <style>
-        body { margin:0; font-family:'Segoe UI','Roboto',sans-serif; background:#fff; color:#333; }
-        .navbar { background:#fff; border-bottom:1px solid #e0e0e0; padding:20px 40px; display:flex; justify-content:space-between; }
-        .navbar a { color:#223CA8; margin:0 15px; text-decoration:none; font-weight:500; }
-        .navbar a:hover { color:#131445; }
-        .section { padding:60px 40px; max-width:900px; margin:auto; }
-        .section h1 { color:#131445; font-size:36px; margin-bottom:20px; text-align:center; }
-        .product-card { background:#f9f9f9; border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-        .product-card h2 { color:#223CA8; margin-top:0; }
-        .product-card p { font-size:16px; line-height:1.6; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #223CA8;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #131445;
+        }
+
+        .section {
+            padding: 60px 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h1 {
+            color: #131445;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h2 {
+            color: #223CA8;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
     </style>
 </h:head>
 
 <h:body>
+    <!-- Navbar -->
     <div class="navbar">
         <div><strong style="color:#131445;">Ezertech</strong></div>
         <div>
@@ -28,23 +98,48 @@
         </div>
     </div>
 
+    <!-- Sección principal -->
     <div class="section">
-        <h1>Nuestros Productos</h1>
+        <h1>Nuestro Producto</h1>
+        <p>
+            Software ERP integral diseñado para la gestión trazable y eficiente del modelo de aseguramiento en salud.
+            Nuestra solución está pensada para adaptarse a las necesidades del sector, garantizando interoperabilidad,
+            cumplimiento normativo y facilidad de despliegue.
+        </p>
 
-        <div class="product-card">
-            <h2>ERP Salud</h2>
-            <p>
-                Plataforma integral para aseguradoras de salud, diseñada para garantizar cumplimiento normativo,
-                trazabilidad y eficiencia en procesos críticos.
-            </p>
-        </div>
+        <!-- Características -->
+        <div class="features">
+            <div class="feature-card">
+                <h2>Arquitectura Modular</h2>
+                <p>
+                    Escalable y altamente configurable, permite adaptar la solución a diferentes modelos operativos
+                    y crecer según las necesidades de cada organización.
+                </p>
+            </div>
 
-        <div class="product-card">
-            <h2>Gestión Digital</h2>
-            <p>
-                Solución modular que permite digitalizar procesos internos, optimizar recursos y mejorar la experiencia
-                de pacientes y asegurados.
-            </p>
+            <div class="feature-card">
+                <h2>Cumplimiento Normativo</h2>
+                <p>
+                    Alineado con los requerimientos legales del sector salud, asegurando trazabilidad, auditoría
+                    y seguridad de la información.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h2>Compatibilidad</h2>
+                <p>
+                    Integración sencilla con diversos entornos tecnológicos, facilitando la interoperabilidad con
+                    sistemas existentes y plataformas externas.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h2>Facilidad de Despliegue</h2>
+                <p>
+                    Implementación progresiva por fases, sin afectar la operación actual. Disponible en la nube,
+                    on-premise o entornos híbridos según las necesidades del cliente.
+                </p>
+            </div>
         </div>
     </div>
 </h:body>

@@ -6,18 +6,135 @@
 <h:head>
     <title>Quiénes Somos | Ezertech</title>
     <style>
-        body { margin:0; font-family:'Segoe UI','Roboto',sans-serif; background:#fff; color:#333; }
-        .navbar { background:#fff; border-bottom:1px solid #e0e0e0; padding:20px 40px; display:flex; justify-content:space-between; }
-        .navbar a { color:#223CA8; margin:0 15px; text-decoration:none; font-weight:500; }
-        .navbar a:hover { color:#131445; }
-        .section { padding:60px 40px; max-width:900px; margin:auto; }
-        .section h1 { color:#131445; font-size:36px; margin-bottom:20px; text-align:center; }
-        .section h2 { color:#223CA8; font-size:28px; margin-bottom:15px; }
-        .section p { font-size:18px; line-height:1.8; text-align:justify; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #223CA8;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #131445;
+        }
+
+        .section {
+            padding: 60px 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h1 {
+            color: #131445;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #223CA8;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .mission-vision {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            flex: 1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #223CA8;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #333;
+        }
+
+        .differentiator {
+            margin-top: 80px;
+        }
+
+        .differentiator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .differentiator-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .differentiator-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .differentiator-card h3 {
+            color: #223CA8;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .differentiator-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
     </style>
 </h:head>
 
 <h:body>
+    <!-- Navbar -->
     <div class="navbar">
         <div><strong style="color:#131445;">Ezertech</strong></div>
         <div>
@@ -27,12 +144,63 @@
         </div>
     </div>
 
+    <!-- Sección principal -->
     <div class="section">
         <h1>Quiénes Somos</h1>
         <h2>Nuestra Empresa</h2>
         <p>
             Somos una <strong>Fábrica de software</strong> especializada en el sector salud con experiencia en el desarrollo de soluciones ERP para empresas aseguradoras de salud, con enfoque en el cumplimiento normativo, trazabilidad y eficiencia, convirtiéndonos en expertos en plataformas críticas del ecosistema.
         </p>
+
+        <!-- Misión y Visión -->
+        <div class="mission-vision">
+            <div class="card">
+                <h2>MISIÓN</h2>
+                <p>
+                    Impulsamos la transformación digital de las Aseguradoras de Salud a través de soluciones tecnológicas integradas,
+                    garantizando eficiencia operativa, cumplimiento normativo y una experiencia unificada para pacientes, redes e instituciones.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>VISIÓN</h2>
+                <p>
+                    Ser el referente tecnológico en Latinoamérica en aseguramiento en salud digital, ofreciendo un ecosistema robusto e interoperable
+                    que conecte a EPS, prestadores y territorios con innovación, confianza y sostenibilidad.
+                </p>
+            </div>
+        </div>
+
+        <!-- Diferenciador Ezertech -->
+        <div class="differentiator">
+            <h2>Diferenciador Ezertech</h2>
+            <div class="differentiator-grid">
+                <div class="differentiator-card">
+                    <h3>Especialización exclusiva en sector salud</h3>
+                    <p>Enfoque total en el ecosistema de aseguramiento, con soluciones adaptadas a sus retos únicos.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Plataforma Dual</h3>
+                    <p>Compatible con EPS tradicionales y modelos de aseguramiento con pólizas.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Roadmap con IA y analítica avanzada</h3>
+                    <p>Innovación continua con inteligencia artificial y capacidades analíticas predictivas.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Experiencia profunda en operación EPS</h3>
+                    <p>Conocimiento real de procesos operativos, administrativos y regulatorios del sector.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Modelo altamente configurable</h3>
+                    <p>Adaptable a cualquier tamaño de entidad, con flexibilidad para entornos diversos.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Analítica Predictiva y Descriptiva</h3>
+                    <p>Herramientas de análisis que permiten tomar decisiones estratégicas basadas en datos.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </h:body>
 </html>
