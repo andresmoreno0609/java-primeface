@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:ui="jakarta.faces.facelets">
+
+<h:head>
+    <title>Producto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        .menu {
+            background-color: #131445;
+            padding: 15px 40px;
+        }
+
+        .menu a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            border-bottom: 2px solid #223CA8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product-card h2 {
+            color: #131445;
+            margin-top: 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</h:head>
+
+<h:body>
+    <!-- Menú reutilizado -->
+    <div class="menu">
+        <a href="index.xhtml">Inicio</a>
+        <a href="quienes.xhtml">Quiénes Somos</a>
+        <a href="producto.xhtml">Producto</a>
+    </div>
+
+    <div class="content">
+        <h1>Nuestros Productos</h1>
+
+        <div class="product-card">
+            <h2>Producto 1</h2>
+            <p>
+                Este es un ejemplo de producto. Aquí puedes describir sus características,
+                beneficios y cualquier detalle importante que quieras mostrar.
+            </p>
+        </div>
+
+        <div class="product-card">
+            <h2>Producto 2</h2>
+            <p>
+                Otro ejemplo de producto. Puedes incluir imágenes, precios o enlaces
+                a más información según lo necesites.
+            </p>
+        </div>
+    </div>
+</h:body>
+</html>

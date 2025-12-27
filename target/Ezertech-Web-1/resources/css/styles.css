@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.menu {
+    background-color: #131445;
+    padding: 15px 40px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #223CA8;
+}
+
+.content {
+    padding: 40px;
+}

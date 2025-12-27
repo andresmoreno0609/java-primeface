@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
-      xmlns:p="http://primefaces.org/ui">
-<h:head>
-    <title>PrimeFaces Test</title>
-</h:head>
+      xmlns:ui="jakarta.faces.facelets">
 
-<h:body>
-    <h:form>
-        <p:commandButton value="PrimeFaces está funcionando 🚀" />
-    </h:form>
-</h:body>
+    <h:head>
+        <title>Prueba JSF</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f5f6fa;
+            }
+
+            .banner {
+                width: 100%;
+                height: auto;
+            }
+
+            .logo {
+                height: 80px;
+                margin: 20px;
+            }
+
+            .menu {
+                background-color: #131445;
+                padding: 15px 40px;
+            }
+
+            .menu a {
+                color: white;
+                margin-right: 25px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .menu a:hover {
+                border-bottom: 2px solid #223CA8;
+            }
+
+            .content {
+                padding: 40px;
+            }
+        </style>
+    </h:head>
+
+    <h:body>
+        <!-- Logo y Banner usando JSF -->
+        <h:graphicImage name="logo.jpg" library="images" alt="Logo Ezertech" style="height:80px; margin:20px;" />
+        <h:graphicImage name="banner.jpg" library="images" alt="Banner Ezertech" style="width:100%; height:auto;" />
+
+        <div class="menu">
+            <a href="index.xhtml">Inicio</a>
+            <a href="quienes.xhtml">Quiénes Somos</a>
+            <a href="producto.xhtml">Producto</a>
+        </div>
+
+        <div class="content">
+            <h1>JSF está funcionando 🚀</h1>
+            <p>Si ves el logo, el banner, el menú azul y este texto, ¡todo está funcionando correctamente!</p>
+        </div>
+
+    </h:body>
 </html>
