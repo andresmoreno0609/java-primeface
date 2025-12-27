@@ -1,146 +1,59 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="jakarta.faces.html"
-      xmlns:ui="jakarta.faces.facelets">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Producto | Ezertech</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', 'Roboto', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        .navbar {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: #223CA8;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .navbar a:hover {
-            color: #131445;
-        }
-
-        .section {
-            padding: 60px 40px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .section h1 {
-            color: #131445;
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature-card {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h2 {
-            color: #223CA8;
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .feature-card p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #444;
-        }
-    </style>
+    <h:outputStylesheet library="css" name="styles.css"/>
 </h:head>
 
 <h:body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div><strong style="color:#131445;">Ezertech</strong></div>
-        <div>
-            <a href="index.xhtml">Inicio</a>
-            <a href="quienes.xhtml">Quiénes Somos</a>
-            <a href="producto.xhtml">Producto</a>
-        </div>
-    </div>
+    <!-- Header común -->
+    <ui:include src="/includes/header.xhtml"/>
 
     <!-- Sección principal -->
     <div class="section">
-        <h1>Nuestro Producto</h1>
+        <h1 class="section-title">Nuestros Productos</h1>
+        <h2 class="section-subtitle">Soluciones Ezertech para el sector salud</h2>
         <p>
-            Software ERP integral diseñado para la gestión trazable y eficiente del modelo de aseguramiento en salud.
-            Nuestra solución está pensada para adaptarse a las necesidades del sector, garantizando interoperabilidad,
-            cumplimiento normativo y facilidad de despliegue.
+            Nuestras plataformas están diseñadas para optimizar los procesos críticos del ecosistema de salud,
+            garantizando trazabilidad, cumplimiento normativo y eficiencia operativa en cada paso.
         </p>
 
-        <!-- Características -->
-        <div class="features">
-            <div class="feature-card">
-                <h2>Arquitectura Modular</h2>
-                <p>
-                    Escalable y altamente configurable, permite adaptar la solución a diferentes modelos operativos
-                    y crecer según las necesidades de cada organización.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <h2>Cumplimiento Normativo</h2>
-                <p>
-                    Alineado con los requerimientos legales del sector salud, asegurando trazabilidad, auditoría
-                    y seguridad de la información.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <h2>Compatibilidad</h2>
-                <p>
-                    Integración sencilla con diversos entornos tecnológicos, facilitando la interoperabilidad con
-                    sistemas existentes y plataformas externas.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <h2>Facilidad de Despliegue</h2>
-                <p>
-                    Implementación progresiva por fases, sin afectar la operación actual. Disponible en la nube,
-                    on-premise o entornos híbridos según las necesidades del cliente.
-                </p>
+        <!-- Beneficios del producto -->
+        <div class="differentiator">
+            <h2 class="section-subtitle">Beneficios principales</h2>
+            <div class="differentiator-grid">
+                <div class="differentiator-card">
+                    <h3>Gestión Integral de Procesos</h3>
+                    <p>Automatización de procesos administrativos, clínicos y financieros con trazabilidad completa.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Plataforma Modular</h3>
+                    <p>Flexibilidad para integrar módulos según las necesidades de cada aseguradora o institución.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Interoperabilidad</h3>
+                    <p>Compatibilidad con sistemas existentes y facilidad de integración con terceros.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Seguridad y Cumplimiento</h3>
+                    <p>Protección de datos sensibles y cumplimiento con normas regulatorias locales e internacionales.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Analytics y Reporting</h3>
+                    <p>Reportes en tiempo real y analítica avanzada para la toma de decisiones estratégicas.</p>
+                </div>
+                <div class="differentiator-card">
+                    <h3>Soporte y Actualizaciones</h3>
+                    <p>Equipo especializado para soporte continuo y actualizaciones de la plataforma.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer común -->
+    <ui:include src="/includes/footer.xhtml"/>
 </h:body>
 </html>

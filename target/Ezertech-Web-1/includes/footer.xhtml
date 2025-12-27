@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="jakarta.faces.html"
-      xmlns:ui="jakarta.faces.facelets">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:ui="jakarta.faces.facelets">
 
-<h:body>
     <div class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -29,50 +27,9 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 Ezertech. Todos los derechos reservados.</p>
+            <p>© 2025 Ezertech. Todos los derechos reservados.</p>
         </div>
+
+        <h:graphicImage library="images" name="banner.jpg" alt="Banner"/>
     </div>
-</h:body>
-
-<style>
-    .footer {
-        background-color: #f9f9f9;
-        border-top: 1px solid #e0e0e0;
-        padding: 40px 20px;
-        margin-top: 60px;
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-width: 1000px;
-        margin: auto;
-        gap: 40px;
-    }
-
-    .footer-section h3 {
-        color: #223CA8;
-        margin-bottom: 15px;
-    }
-
-    .footer-section p, .footer-section a {
-        font-size: 16px;
-        color: #333;
-        text-decoration: none;
-    }
-
-    .footer-section a:hover {
-        color: #131445;
-    }
-
-    .footer-bottom {
-        text-align: center;
-        margin-top: 30px;
-        border-top: 1px solid #ddd;
-        padding-top: 20px;
-        font-size: 14px;
-        color: #555;
-    }
-</style>
-</html>
+</ui:composition>

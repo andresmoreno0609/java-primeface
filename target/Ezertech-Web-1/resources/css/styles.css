@@ -1,25 +1,255 @@
+/* =====================
+   Estilos Globales
+   ===================== */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
 }
 
-.menu {
-    background-color: #131445;
-    padding: 15px 40px;
+/* =====================
+   Header / Navbar
+   ===================== */
+.navbar {
+    background-color: #ffffff; /* fondo blanco */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a {
-    color: white;
-    margin-right: 25px;
-    text-decoration: none;
+.navbar .logo {
+    font-size: 22px;
     font-weight: bold;
+    color: #131445;
 }
 
-.menu a:hover {
-    border-bottom: 2px solid #223CA8;
+.navbar .menu a {
+    color: #223CA8; /* azul principal */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.content {
-    padding: 40px;
+.navbar .menu a:hover {
+    color: #131445; /* azul oscuro al pasar el cursor */
+}
+
+/* =====================
+   Hero Section
+   ===================== */
+.hero {
+    text-align: center;
+    padding: 100px 40px;
+    background: linear-gradient(135deg, #131445, #223CA8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero button {
+    margin-top: 30px;
+    background: #ffffff;
+    color: #223CA8;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #f0f0f0;
+}
+
+/* =====================
+   Secciones y Cards
+   ===================== */
+.section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h1 {
+    color: #131445;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #223CA8;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Misión y Visión */
+.mission-vision {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #223CA8;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+/* Sección Nuestros Diferenciales */
+.differentials {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.differentials h2 {
+    color: #131445;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.differentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.differential-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.differential-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.differential-card h3 {
+    color: #223CA8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.differential-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* =====================
+   Testimonios
+   ===================== */
+.testimonials {
+    background: #f9f9f9;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #223CA8;
+    margin-bottom: 30px;
+}
+
+.testimonials blockquote {
+    font-size: 18px;
+    color: #333;
+    margin: 20px auto;
+    max-width: 700px;
+    font-style: italic;
+}
+/* Footer */
+.footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 20px; /* menos padding */
+    margin-top: 40px;
+    font-size: 14px; /* más pequeño */
+    color: #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px; /* menos espacio entre secciones */
+}
+
+.footer-section h3 {
+    color: #223CA8;
+    margin-bottom: 10px; /* menos espacio debajo del título */
+    font-size: 16px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+.footer-section a:hover {
+    color: #131445;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px; /* menos espacio arriba */
+    border-top: 1px solid #ddd;
+    padding-top: 10px; /* menos padding */
+    font-size: 12px; /* más pequeño */
+    color: #555;
 }
