@@ -4,79 +4,46 @@
       xmlns:ui="jakarta.faces.facelets">
 
 <h:head>
-    <title>Producto</title>
+    <title>Productos | Ezertech</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f6fa;
-        }
-
-        .menu {
-            background-color: #131445;
-            padding: 15px 40px;
-        }
-
-        .menu a {
-            color: white;
-            margin-right: 25px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .menu a:hover {
-            border-bottom: 2px solid #223CA8;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .product-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .product-card h2 {
-            color: #131445;
-            margin-top: 0;
-        }
-
-        .product-card p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+        body { margin:0; font-family:'Segoe UI','Roboto',sans-serif; background:#fff; color:#333; }
+        .navbar { background:#fff; border-bottom:1px solid #e0e0e0; padding:20px 40px; display:flex; justify-content:space-between; }
+        .navbar a { color:#223CA8; margin:0 15px; text-decoration:none; font-weight:500; }
+        .navbar a:hover { color:#131445; }
+        .section { padding:60px 40px; max-width:900px; margin:auto; }
+        .section h1 { color:#131445; font-size:36px; margin-bottom:20px; text-align:center; }
+        .product-card { background:#f9f9f9; border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+        .product-card h2 { color:#223CA8; margin-top:0; }
+        .product-card p { font-size:16px; line-height:1.6; }
     </style>
 </h:head>
 
 <h:body>
-    <!-- Menú reutilizado -->
-    <div class="menu">
-        <a href="index.xhtml">Inicio</a>
-        <a href="quienes.xhtml">Quiénes Somos</a>
-        <a href="producto.xhtml">Producto</a>
+    <div class="navbar">
+        <div><strong style="color:#131445;">Ezertech</strong></div>
+        <div>
+            <a href="index.xhtml">Inicio</a>
+            <a href="quienes.xhtml">Quiénes Somos</a>
+            <a href="producto.xhtml">Producto</a>
+        </div>
     </div>
 
-    <div class="content">
+    <div class="section">
         <h1>Nuestros Productos</h1>
 
         <div class="product-card">
-            <h2>Producto 1</h2>
+            <h2>ERP Salud</h2>
             <p>
-                Este es un ejemplo de producto. Aquí puedes describir sus características,
-                beneficios y cualquier detalle importante que quieras mostrar.
+                Plataforma integral para aseguradoras de salud, diseñada para garantizar cumplimiento normativo,
+                trazabilidad y eficiencia en procesos críticos.
             </p>
         </div>
 
         <div class="product-card">
-            <h2>Producto 2</h2>
+            <h2>Gestión Digital</h2>
             <p>
-                Otro ejemplo de producto. Puedes incluir imágenes, precios o enlaces
-                a más información según lo necesites.
+                Solución modular que permite digitalizar procesos internos, optimizar recursos y mejorar la experiencia
+                de pacientes y asegurados.
             </p>
         </div>
     </div>

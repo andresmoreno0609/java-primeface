@@ -4,63 +4,34 @@
       xmlns:ui="jakarta.faces.facelets">
 
 <h:head>
-    <title>Quiénes Somos</title>
+    <title>Quiénes Somos | Ezertech</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f6fa;
-        }
-
-        .menu {
-            background-color: #131445;
-            padding: 15px 40px;
-        }
-
-        .menu a {
-            color: white;
-            margin-right: 25px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .menu a:hover {
-            border-bottom: 2px solid #223CA8;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .content h1 {
-            color: #131445;
-        }
-
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
+        body { margin:0; font-family:'Segoe UI','Roboto',sans-serif; background:#fff; color:#333; }
+        .navbar { background:#fff; border-bottom:1px solid #e0e0e0; padding:20px 40px; display:flex; justify-content:space-between; }
+        .navbar a { color:#223CA8; margin:0 15px; text-decoration:none; font-weight:500; }
+        .navbar a:hover { color:#131445; }
+        .section { padding:60px 40px; max-width:900px; margin:auto; }
+        .section h1 { color:#131445; font-size:36px; margin-bottom:20px; text-align:center; }
+        .section h2 { color:#223CA8; font-size:28px; margin-bottom:15px; }
+        .section p { font-size:18px; line-height:1.8; text-align:justify; }
     </style>
 </h:head>
 
 <h:body>
-    <!-- Menú reutilizado -->
-    <div class="menu">
-        <a href="index.xhtml">Inicio</a>
-        <a href="quienes.xhtml">Quiénes Somos</a>
-        <a href="producto.xhtml">Producto</a>
+    <div class="navbar">
+        <div><strong style="color:#131445;">Ezertech</strong></div>
+        <div>
+            <a href="index.xhtml">Inicio</a>
+            <a href="quienes.xhtml">Quiénes Somos</a>
+            <a href="producto.xhtml">Producto</a>
+        </div>
     </div>
 
-    <div class="content">
+    <div class="section">
         <h1>Quiénes Somos</h1>
+        <h2>Nuestra Empresa</h2>
         <p>
-            Somos <strong>Ezertech</strong>, una empresa dedicada a soluciones digitales innovadoras.
-            Nuestro objetivo es mejorar la experiencia de nuestros clientes mediante tecnología
-            inteligente y adaptable.
-        </p>
-        <p>
-            Creemos en la innovación, la calidad y el compromiso con cada proyecto que desarrollamos.
-            Nuestro equipo está conformado por profesionales apasionados por la transformación digital.
+            Somos una <strong>Fábrica de software</strong> especializada en el sector salud con experiencia en el desarrollo de soluciones ERP para empresas aseguradoras de salud, con enfoque en el cumplimiento normativo, trazabilidad y eficiencia, convirtiéndonos en expertos en plataformas críticas del ecosistema.
         </p>
     </div>
 </h:body>
